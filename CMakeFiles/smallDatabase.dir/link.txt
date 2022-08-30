@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/smallDatabase.dir/main.cpp.o CMakeFiles/smallDatabase.dir/Osoba.cpp.o  -o smallDatabase 

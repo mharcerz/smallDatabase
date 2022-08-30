@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.cpp
+Osoba.h
+/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
+
+/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
+string
+-
+
+/mnt/c/Users/mharc/Desktop/smallDatabase/main.cpp
+iostream
+-
+conio.h
+-
+stdlib.h
+-
+vector
+-
+Osoba.h
+/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
+

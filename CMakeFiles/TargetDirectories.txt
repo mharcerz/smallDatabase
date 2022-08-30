@@ -1,0 +1,3 @@
+/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles/smallDatabase.dir
+/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles/edit_cache.dir
