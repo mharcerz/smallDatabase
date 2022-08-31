@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <vector>
+#include <fstream>
 #include "Osoba.h"
 
 #define BLACK "\033[0;30m"
@@ -23,9 +24,14 @@ void dodajOsobe();
 
 void pokazOsoby();
 
-int main() {
+void zapiszDoPliku();
 
-    system("clear");
+void odczytajZPliku();
+
+int main() {
+    cout << "DUPA" << endl;
+    odczytajZPliku();
+//    system("clear");
     while (menu() != 27); //27 to w ASCII znak enter
 
 
@@ -50,6 +56,9 @@ char menu() {
             break;
         case '2':
             pokazOsoby();
+            break;
+        case '3':
+            zapiszDoPliku();
             break;
         case 27:
             return 27;
@@ -109,4 +118,38 @@ void pokazOsoby() {
     else
         cout << "BRAK OSOB W BAZIE!!!" << endl;
     cout << WHITE;
+}
+
+void zapiszDoPliku()
+{
+    ofstream file("./baza.txt");
+
+    if(file.is_open())
+    {
+        file << ludzie.size() << endl;
+        for (int i = 0; i < ludzie.size(); i++) {
+            file << ludzie[i].getID() << "," << ludzie[i].getImie() << "," << ludzie[i].getNazwisko() << ","
+                 << ludzie[i].getWiek() << "," << ludzie[i].getTelefon() << endl;
+        }
+
+        file.close();
+    }
+    else
+        cout << "Plik nie zostal otwarty poprawnie" << endl;
+
+}
+void odczytajZPliku()
+{
+    ifstream file("../baza.txt");
+    int * ileOsobWPliku = new int;
+    if(file.is_open())
+    {
+        file >> *ileOsobWPliku;
+        if( *ileOsobWPliku == 0)
+            cout << "Plik jest aktualnie pusty" << endl;
+        cout << *ileOsobWPliku << endl;
+        file.close();
+    }
+    else
+        cout << "Plik nie zostal otwarty poprawnie" << endl;
 }

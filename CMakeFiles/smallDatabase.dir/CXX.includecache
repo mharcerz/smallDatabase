@@ -23,6 +23,8 @@ stdlib.h
 -
 vector
 -
+fstream
+-
 Osoba.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
 
