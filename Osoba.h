@@ -14,6 +14,7 @@ private:
     string nazwisko;
     int wiek;
     string telefon;
+    bool zapisaneWPliku;
 public:
     Osoba();
     ~Osoba();
