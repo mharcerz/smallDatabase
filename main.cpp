@@ -5,7 +5,7 @@
 #include <fstream>
 #include "Osoba.h"
 #include <cstring>
-#include "boost.tpp"
+#include <cstdio>
 
 #define BLACK "\033[0;30m"
 #define RED  "\033[0;31m"
@@ -17,7 +17,7 @@
 #define WHITE "\033[0;37m"
 using namespace std;
 vector <Osoba> ludzie;
-
+enum exit {esc = 27};
 void wymagajEnter();
 
 char menu();
@@ -35,27 +35,17 @@ void przeszukajBaze();
 char menuSzukaj();
 
 void szukaj(int, string);
+
 void szukaj2(int, int);
 
-template<typename T>
-void Szukaj(int val, T arg)
-{
+//template<typename T>
+void Szukaj(int val, string arg) {
     cout << " ID  |  IMIE  |  NAZWISKO  |  TELEFON  |  WIEK" << endl;
-    switch (val) {
-        case 1: //po ID
-            break;
-        case 2: //po imieniu
-            break;
-        case 3: //po nazwisku
-            break;
-        case 4: //po telefonie
-            break;
-        case 5: //po wieku
-            break;
-    }
+//    enum dzialanie {ID = 1, imie, nazwisko, telefon, wiek};
+
     for(int i = 0; i <ludzie.size(); i++)
     {
-        if(ludzie[i].getWiek() == wiek) {
+        if(ludzie[i].get(val) == arg) {
             cout << ludzie[i].getID() << " | " << ludzie[i].getImie() << " | " << ludzie[i].getNazwisko()
                  << " | " << ludzie[i].getTelefon() << " | " << ludzie[i].getWiek() << endl;
         }
@@ -65,7 +55,7 @@ void Szukaj(int val, T arg)
 int main() {
 
     odczytajZPliku();
-    while (menu() != 27); //27 to w ASCII znak enter
+    while (menu() != esc); //27 to w ASCII znak enter
 
 
     return EXIT_SUCCESS;
@@ -86,20 +76,21 @@ char menu() {
 
     tescior = getch(); // pobiera wartosc bez potwierdzenie enterem
     switch (tescior) {
-        case '1':
+        enum czynnosc {dodaj = 49, pokaz, zapisz, przeszukaj};
+        case dodaj:
             dodajOsobe();
             break;
-        case '2':
+        case pokaz:
             pokazOsoby();
             break;
-        case '3':
+        case zapisz:
             zapiszDoPliku();
             break;
-        case '4':
+        case przeszukaj:
             przeszukajBaze();
             break;
-        case 27:
-            return 27;
+        case esc:
+            return esc;
         default:
             break;
 
@@ -112,7 +103,7 @@ void wymagajEnter() {
     cout << RED;
     cout << "Wcisnij Enter aby kontynuowac" << endl;
     while (getch() != '\n'); //enter to 13 w ASCII
-//    system("clear");
+    system("clear");
 
 }
 
@@ -194,17 +185,18 @@ int odczytajZPliku() {
                 char *tmp = strtok(dane, ",");
                 int i = 1;
                 while (tmp != NULL) {
+                    enum odczyt { imie = 1, nazwisko, nr, wiek};
                     switch (i) {
-                        case 1:
+                        case imie:
                             osoba->setImie(tmp);
                             break;
-                        case 2:
+                        case nazwisko:
                             osoba->setNazwisko(tmp);
                             break;
-                        case 3:
+                        case nr:
                             osoba->setTelefon(tmp);
                             break;
-                        case 4:
+                        case wiek:
                             osoba->setWiek(atoi(tmp)); //konwersja char* do int
                             break;
                         default:
@@ -233,27 +225,37 @@ int odczytajZPliku() {
 
 void przeszukajBaze() {
     if (ludzie.size()) {
-
+        enum search { ID = 49, imie, nazwisko, wiek, nr};
         switch (menuSzukaj()) {
-            case '1':
+            case ID:
                 break;
-            case '2': {
+            case imie: {
                 cout << "Podaj imie po ktorym chcesz szukac:";
-                string imie;
+                char * imie = new char;
                 cin >> imie;
-                szukaj(2, imie);
+                cin.ignore();
+//                szukaj(2, imie);
+                Szukaj(2, imie);
+                delete imie;
                 break;
             }
-            case '3':
+            case nazwisko: {
+                cout << "Podaj nazwisko po ktorym chcesz szukac:";
+                char * nazwisko = new char;
+                cin >> nazwisko;
+                cin.ignore();
+                Szukaj(3, nazwisko);
+                delete nazwisko;
                 break;
-            case '4':{
+            }
+            case wiek: {
                 cout << "Podaj wiek po ktorym chcesz szukac:";
                 int wiek;
                 cin >> wiek;
                 szukaj2(4, wiek);
                 break;
             }
-            case '5':
+            case nr:
                 break;
             default:
                 cout << "Podales niewlasciwa wartosc" << endl;
@@ -267,27 +269,27 @@ void przeszukajBaze() {
 void szukaj(int val, string imie) {
 
     cout << " ID  |  IMIE  |  NAZWISKO  |  TELEFON  |  WIEK" << endl;
-    for(int i = 0; i <ludzie.size(); i++)
-    {
-        if(ludzie[i].getImie() == imie) {
+    for (int i = 0; i < ludzie.size(); i++) {
+        if (!strcasecmp( ludzie[i].getImie().c_str(), imie.c_str())) { //porownuje nie zwracajac uwagi na wielkosc znaku
             cout << ludzie[i].getID() << " | " << ludzie[i].getImie() << " | " << ludzie[i].getNazwisko()
                  << " | " << ludzie[i].getTelefon() << " | " << ludzie[i].getWiek() << endl;
         }
     }
 
 }
+
 void szukaj2(int val, int wiek) {
 
     cout << " ID  |  IMIE  |  NAZWISKO  |  TELEFON  |  WIEK" << endl;
-    for(int i = 0; i <ludzie.size(); i++)
-    {
-        if(ludzie[i].getWiek() == wiek) {
+    for (int i = 0; i < ludzie.size(); i++) {
+        if (ludzie[i].getWiek() == wiek) {
             cout << ludzie[i].getID() << " | " << ludzie[i].getImie() << " | " << ludzie[i].getNazwisko()
                  << " | " << ludzie[i].getTelefon() << " | " << ludzie[i].getWiek() << endl;
         }
     }
 
 }
+
 char menuSzukaj() {
     cout << "Wzgledem czego chcesz przeszukac baze:" << endl;
     cout << "1. ID" << endl;
@@ -295,7 +297,6 @@ char menuSzukaj() {
     cout << "3. Nazwisko" << endl;
     cout << "4. Wiek" << endl;
     cout << "5. Nr. telefonu" << endl;
-    char c = getch();
-    system("clear");
+    char c = getch();;
     return c;
 }

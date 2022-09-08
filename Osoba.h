@@ -28,7 +28,9 @@ public:
     void setWiek(int);
     string getTelefon();
     void setTelefon(string);
+    string get(int);
 };
 
 
 #endif SMALLDATABASE_OSOBA_H
+

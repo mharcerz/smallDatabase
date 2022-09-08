@@ -5,6 +5,5 @@ CMakeFiles/smallDatabase.dir/Osoba.cpp.o: Osoba.cpp
 CMakeFiles/smallDatabase.dir/Osoba.cpp.o: Osoba.h
 
 CMakeFiles/smallDatabase.dir/main.cpp.o: Osoba.h
-CMakeFiles/smallDatabase.dir/main.cpp.o: boost.tpp
 CMakeFiles/smallDatabase.dir/main.cpp.o: main.cpp
 

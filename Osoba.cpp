@@ -40,3 +40,25 @@ string Osoba::getTelefon() {
 void Osoba::setTelefon(string telefon) {
     this->telefon = telefon;
 }
+string Osoba::get(int t) {
+    enum dzialanie {ID = 1, imie, nazwisko, telefon, wiek};
+    switch (t) {
+//        case ID:
+//            return static_cast<string> (getID());
+//            break;
+        case imie:
+            return getImie();
+            break;
+        case nazwisko:
+            return getNazwisko();
+            break;
+        case telefon:
+            return getTelefon();
+            break;
+//        case wiek:
+//            return static_cast<string> (getWiek()); //ToDo do ogarniecia na template
+//        default:
+//            return static_cast<string> (EXIT_FAILURE);
+//            break;
+    }
+    }

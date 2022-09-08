@@ -14,28 +14,6 @@ Osoba.h
 string
 -
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/boost.tpp
-iterator
--
-boost/range/begin.hpp
--
-boost/range/end.hpp
--
-boost/range/iterator.hpp
--
-boost/range/const_iterator.hpp
--
-boost/range/as_literal.hpp
--
-boost/range/iterator_range_core.hpp
--
-boost/algorithm/string/compare.hpp
--
-boost/algorithm/string/find.hpp
--
-boost/algorithm/string/detail/predicate.hpp
--
-
 /mnt/c/Users/mharc/Desktop/smallDatabase/main.cpp
 iostream
 -
@@ -51,6 +29,6 @@ Osoba.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
 cstring
 -
-boost.tpp
-/mnt/c/Users/mharc/Desktop/smallDatabase/boost.tpp
+cstdio
+-
 
