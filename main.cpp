@@ -38,21 +38,107 @@ void szukaj(int, string);
 
 void szukaj2(int, int);
 
-//template<typename T>
-void Szukaj(int val, string arg) {
+
+template <pole p, typename T2>
+bool compare(Osoba osoba, T2 arg)
+{
+    return osoba.get<p, T2>() == arg;
+}
+
+
+template<typename T2, pole p> //ToDo auto
+void Szukaj(T2 arg) {
+
     cout << " ID  |  IMIE  |  NAZWISKO  |  TELEFON  |  WIEK" << endl;
 //    enum dzialanie {ID = 1, imie, nazwisko, telefon, wiek};
 
     for(int i = 0; i <ludzie.size(); i++)
     {
-        if(ludzie[i].get(val) == arg) {
+        int g;
+        string h;
+        if(compare<p, T2>(ludzie[i], arg)) {
             cout << ludzie[i].getID() << " | " << ludzie[i].getImie() << " | " << ludzie[i].getNazwisko()
                  << " | " << ludzie[i].getTelefon() << " | " << ludzie[i].getWiek() << endl;
         }
     }
 }
+void przeszukajBaze() {
+    if (ludzie.size()) {
+        enum search { ID = 49, imie, nazwisko, wiek, nr};
+        switch (menuSzukaj()) {
+            case ID:
+                break;
+            case imie: {
+                cout << "Podaj imie po ktorym chcesz szukac:";
+                char * imie = new char;
+                cin >> imie;
+                cin.ignore();
+                Szukaj<string, pole::imie>(imie);
+//                szukaj(2, imie);
+//                Szukaj(2, imie);
+//                Szukaj(imie);
+                delete imie;
+                break;
+            }
+            case nazwisko: {
+                cout << "Podaj nazwisko po ktorym chcesz szukac:";
+                char * nazwisko = new char;
+                cin >> nazwisko;
+                cin.ignore();
+                Szukaj<string, pole::nazwisko>(nazwisko);
+//                Szukaj(3, nazwisko);
+                delete nazwisko;
+                break;
+            }
+            case wiek: {
+                cout << "Podaj wiek po ktorym chcesz szukac:";
+                short int wiek;
+                cin >> wiek;
+                cin.ignore();
+                Szukaj<short int, pole::wiek>(wiek);
+//                szukaj2(4, wiek);
+//                Szukaj(wiek);
+                break;
+            }
+            case nr: {
+                cout << "Podaj nr telefonu po ktorym chcesz szukac:";
+                char * nr = new char;
+                cin >> nr;
+                cin.ignore();
+                Szukaj<string, pole::telefon>(nr);
+//                Szukaj(5, nr);
+                delete nr;
+                break;
+            }
+            default:
+                cout << "Podales niewlasciwa wartosc" << endl;
+                break;
+        }
+    } else
+        cout << "Baza jest pusta, nie ma tam czego szukac" << endl;
+
+}
+//template<typename T2, auto T3> //ToDo auto
+//void Szukaj(T2 arg) {
+//
+//    T3(arg);
+//
+//    cout << arg << endl;
+//}
+//void elo(string s)
+//{
+//    cout << s + 'a' << endl;
+//}
+//void elo2(int a)
+//{
+//    cout << a + 1 << endl;
+//}
 
 int main() {
+
+//    string s = "siema";
+//    Szukaj<int, elo2>(1);
+//    Szukaj<string, elo>(s);
 
     odczytajZPliku();
     while (menu() != esc); //27 to w ASCII znak enter
@@ -223,48 +309,7 @@ int odczytajZPliku() {
     wymagajEnter();
 }
 
-void przeszukajBaze() {
-    if (ludzie.size()) {
-        enum search { ID = 49, imie, nazwisko, wiek, nr};
-        switch (menuSzukaj()) {
-            case ID:
-                break;
-            case imie: {
-                cout << "Podaj imie po ktorym chcesz szukac:";
-                char * imie = new char;
-                cin >> imie;
-                cin.ignore();
-//                szukaj(2, imie);
-                Szukaj(2, imie);
-                delete imie;
-                break;
-            }
-            case nazwisko: {
-                cout << "Podaj nazwisko po ktorym chcesz szukac:";
-                char * nazwisko = new char;
-                cin >> nazwisko;
-                cin.ignore();
-                Szukaj(3, nazwisko);
-                delete nazwisko;
-                break;
-            }
-            case wiek: {
-                cout << "Podaj wiek po ktorym chcesz szukac:";
-                int wiek;
-                cin >> wiek;
-                szukaj2(4, wiek);
-                break;
-            }
-            case nr:
-                break;
-            default:
-                cout << "Podales niewlasciwa wartosc" << endl;
-                break;
-        }
-    } else
-        cout << "Baza jest pusta, nie ma tam czego szukac" << endl;
 
-}
 
 void szukaj(int val, string imie) {
 
