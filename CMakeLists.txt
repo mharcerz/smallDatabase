@@ -3,4 +3,4 @@ project(smallDatabase)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(smallDatabase main.cpp Osoba.h Osoba.cpp)
+add_executable(smallDatabase main.cpp Person.h Person.cpp)

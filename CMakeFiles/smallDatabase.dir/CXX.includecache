@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.cpp
-Osoba.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
+/mnt/c/Users/mharc/Desktop/smallDatabase/Person.cpp
+algorithm
+-
+Person.h
+/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+iostream
+-
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
+/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
 string
 -
 
@@ -21,14 +25,16 @@ conio.h
 -
 stdlib.h
 -
-vector
--
 fstream
 -
-Osoba.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.h
+Person.h
+/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
 cstring
 -
 cstdio
+-
+algorithm
+-
+vector
 -
 

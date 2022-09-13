@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.cpp" "/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles/smallDatabase.dir/Osoba.cpp.o"
+  "/mnt/c/Users/mharc/Desktop/smallDatabase/Person.cpp" "/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles/smallDatabase.dir/Person.cpp.o"
   "/mnt/c/Users/mharc/Desktop/smallDatabase/main.cpp" "/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles/smallDatabase.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/smallDatabase.dir/main.cpp.o"
-  "CMakeFiles/smallDatabase.dir/Osoba.cpp.o"
+  "CMakeFiles/smallDatabase.dir/Person.cpp.o"
   "smallDatabase.pdb"
   "smallDatabase"
 )

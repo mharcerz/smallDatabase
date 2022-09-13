@@ -123,32 +123,32 @@ smallDatabase/fast:
 	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/build
 .PHONY : smallDatabase/fast
 
-Osoba.o: Osoba.cpp.o
+Person.o: Person.cpp.o
 
-.PHONY : Osoba.o
+.PHONY : Person.o
 
 # target to build an object file
-Osoba.cpp.o:
-	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Osoba.cpp.o
-.PHONY : Osoba.cpp.o
+Person.cpp.o:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Person.cpp.o
+.PHONY : Person.cpp.o
 
-Osoba.i: Osoba.cpp.i
+Person.i: Person.cpp.i
 
-.PHONY : Osoba.i
+.PHONY : Person.i
 
 # target to preprocess a source file
-Osoba.cpp.i:
-	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Osoba.cpp.i
-.PHONY : Osoba.cpp.i
+Person.cpp.i:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Person.cpp.i
+.PHONY : Person.cpp.i
 
-Osoba.s: Osoba.cpp.s
+Person.s: Person.cpp.s
 
-.PHONY : Osoba.s
+.PHONY : Person.s
 
 # target to generate assembly for a file
-Osoba.cpp.s:
-	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Osoba.cpp.s
-.PHONY : Osoba.cpp.s
+Person.cpp.s:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Person.cpp.s
+.PHONY : Person.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... smallDatabase"
 	@echo "... edit_cache"
-	@echo "... Osoba.o"
-	@echo "... Osoba.i"
-	@echo "... Osoba.s"
+	@echo "... Person.o"
+	@echo "... Person.i"
+	@echo "... Person.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

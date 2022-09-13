@@ -81,40 +81,40 @@ CMakeFiles/smallDatabase.dir/main.cpp.o.provides: CMakeFiles/smallDatabase.dir/m
 CMakeFiles/smallDatabase.dir/main.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/main.cpp.o
 
 
-CMakeFiles/smallDatabase.dir/Osoba.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
-CMakeFiles/smallDatabase.dir/Osoba.cpp.o: Osoba.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smallDatabase.dir/Osoba.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/Osoba.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.cpp
+CMakeFiles/smallDatabase.dir/Person.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
+CMakeFiles/smallDatabase.dir/Person.cpp.o: Person.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smallDatabase.dir/Person.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/Person.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/Person.cpp
 
-CMakeFiles/smallDatabase.dir/Osoba.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/Osoba.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.cpp > CMakeFiles/smallDatabase.dir/Osoba.cpp.i
+CMakeFiles/smallDatabase.dir/Person.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/Person.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/Person.cpp > CMakeFiles/smallDatabase.dir/Person.cpp.i
 
-CMakeFiles/smallDatabase.dir/Osoba.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/Osoba.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/Osoba.cpp -o CMakeFiles/smallDatabase.dir/Osoba.cpp.s
+CMakeFiles/smallDatabase.dir/Person.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/Person.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/Person.cpp -o CMakeFiles/smallDatabase.dir/Person.cpp.s
 
-CMakeFiles/smallDatabase.dir/Osoba.cpp.o.requires:
+CMakeFiles/smallDatabase.dir/Person.cpp.o.requires:
 
-.PHONY : CMakeFiles/smallDatabase.dir/Osoba.cpp.o.requires
+.PHONY : CMakeFiles/smallDatabase.dir/Person.cpp.o.requires
 
-CMakeFiles/smallDatabase.dir/Osoba.cpp.o.provides: CMakeFiles/smallDatabase.dir/Osoba.cpp.o.requires
-	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Osoba.cpp.o.provides.build
-.PHONY : CMakeFiles/smallDatabase.dir/Osoba.cpp.o.provides
+CMakeFiles/smallDatabase.dir/Person.cpp.o.provides: CMakeFiles/smallDatabase.dir/Person.cpp.o.requires
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Person.cpp.o.provides.build
+.PHONY : CMakeFiles/smallDatabase.dir/Person.cpp.o.provides
 
-CMakeFiles/smallDatabase.dir/Osoba.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Osoba.cpp.o
+CMakeFiles/smallDatabase.dir/Person.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Person.cpp.o
 
 
 # Object files for target smallDatabase
 smallDatabase_OBJECTS = \
 "CMakeFiles/smallDatabase.dir/main.cpp.o" \
-"CMakeFiles/smallDatabase.dir/Osoba.cpp.o"
+"CMakeFiles/smallDatabase.dir/Person.cpp.o"
 
 # External object files for target smallDatabase
 smallDatabase_EXTERNAL_OBJECTS =
 
 smallDatabase: CMakeFiles/smallDatabase.dir/main.cpp.o
-smallDatabase: CMakeFiles/smallDatabase.dir/Osoba.cpp.o
+smallDatabase: CMakeFiles/smallDatabase.dir/Person.cpp.o
 smallDatabase: CMakeFiles/smallDatabase.dir/build.make
 smallDatabase: CMakeFiles/smallDatabase.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable smallDatabase"
@@ -126,7 +126,7 @@ CMakeFiles/smallDatabase.dir/build: smallDatabase
 .PHONY : CMakeFiles/smallDatabase.dir/build
 
 CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/main.cpp.o.requires
-CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Osoba.cpp.o.requires
+CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Person.cpp.o.requires
 
 .PHONY : CMakeFiles/smallDatabase.dir/requires
 
