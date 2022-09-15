@@ -60,13 +60,15 @@ void Person::set_phone_number(string phone_number) {
 }
 
 Person Person::operator=(Person obj) {
-
+    if(obj.get_ID() == counter)
+        counter--;
     this->set_name(obj.get_name());
     this->set_surname(obj.get_surname());
     this->set_phone_number(obj.get_phone_number());
     this->set_age(obj.get_age());
     return obj;
 }
+
 
 template <> //ToDo template specialization
 string Person::get<option::name>() {
