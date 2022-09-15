@@ -24,23 +24,23 @@ enum action {
     add = 1, show, searchA, erase, esc = -21
 };  //27 - 48(cast z char do int)
 
-void requireEnter();
+void require_enter();
 
 char menu();
 
-void addPerson();
+void add_person();
 
-void showPersons();
+void show_persons();
 
-void saveToFile();
+void save_to_file();
 
-int readFromFile();
+int read_from_file();
 
-int searchingMenu();
+int searching_menu();
 
-void searchingBase();
+void searching_base();
 
-void removePerson();
+void remove_person();
 
 template<option, typename T2>
 bool compare(Person, T2);
@@ -51,15 +51,15 @@ void search(T2);
 
 int main() {
 
-    readFromFile();
+    read_from_file();
     while (menu() != action::esc); //27 to w ASCII znak enter
-    saveToFile();
+    save_to_file();
     return EXIT_SUCCESS;
 }
 
 char menu() {
+    int option;
 
-    int * option = new int;
     cout << GREEN;
     cout << "People in the base: " << people.size() << endl;
     cout << CYAN << "Press Esc to exit!" << endl;
@@ -70,20 +70,20 @@ char menu() {
     cout << "3. Search the base. " << endl;
     cout << "4. Remove the person from the base." << endl;
 
-    *option = static_cast<int> (getch()) - 48; // pobiera wartosc bez potwierdzenie enterem
-    switch (*option) {
+    option = static_cast<int> (getch()) - 48; // pobiera wartosc bez potwierdzenie enterem
+    switch (option) {
 
         case action::add:
-            addPerson();
+            add_person();
             break;
         case action::show:
-            showPersons();
+            show_persons();
             break;
         case action::searchA:
-            searchingBase();
+            searching_base();
             break;
         case action::erase:
-            removePerson();
+            remove_person();
             break;
         case action::esc:
             return esc;
@@ -91,107 +91,109 @@ char menu() {
             break;
 
     }
-    requireEnter();
-    return *option;
-    delete option;
+    require_enter();
+    return option;
 }
 
-void requireEnter() {
+void require_enter() {
 
     cout << RED;
     cout << "Press Enter to continue" << endl;
     while (getch() != '\n'); //enter to 13 w ASCII
     system("clear");
-
 }
 
-void addPerson() {
+void add_person() {
     Person *person = new Person();
-    char *data = new char;
+    char * data = new char;
+    int *age = new int;
 
     cout << "Name: ";
     cin >> data;
-    person->setName(data);
+    person->set_name(data);
 
     cout << "Surname: ";
     cin >> data;
-    person->setSurname(data);
+    person->set_surname(data);
 
     cout << "Phone Number: ";
     cin >> data;
-    person->setPhoneNumber(data);
-    delete data;
+    person->set_phone_number(data);
 
-    int *age = new int;
     cout << "Age: ";
     cin >> *age;
-    person->setAge(*age);
+    person->set_age(*age);
 
     people.push_back(*person);
 
     delete person;
+    delete data;
     delete age;
 }
 
-void showPersons() {
+void show_persons() {
 
     if (people.size()) {
-        cout << PURPLE;
-        cout << " ID | NAME | SURNAME | PHONE | AGE" << endl;
-        cout << YELLOW;
+        cout << PURPLE << " ID | NAME | SURNAME | PHONE | AGE" << endl << YELLOW;
+
         for (int i = 0; i < people.size(); i++) {
-            cout << people[i].getID() << " | " << people[i].getName() << " | " << people[i].getSurname()
-                 << " | " << people[i].getPhoneNumber() << " | " << people[i].getAge() << endl;
+            cout << people[i].get_ID() << " | " << people[i].get_name() << " | " << people[i].get_surname()
+                 << " | " << people[i].get_phone_number() << " | " << people[i].get_age() << endl;
         }
     } else
         cout << "THE BASE IS EMPTY!!!" << endl;
 }
 
-void saveToFile() {
+void save_to_file() {
     ofstream file("./base.txt");
 
     if (file.is_open()) {
         for (int i = 0; i < people.size() - 1; i++) {
-            file << people[i].getName() << "," << people[i].getSurname() << "," << people[i].getPhoneNumber()
-                 << "," << people[i].getAge() << endl;
+            file << people[i].get_name() << "," << people[i].get_surname()
+                << "," << people[i].get_phone_number() << "," << people[i].get_age() << endl;
         }
-        file << people[people.size() - 1].getName() << "," << people[people.size() - 1].getSurname() << ","
-             << people[people.size() - 1].getPhoneNumber()
-             << "," << people[people.size() - 1].getAge();
+        file << people[people.size()-1].get_name() << "," << people[people.size()-1].get_surname()
+            << "," << people[people.size()-1].get_phone_number() << "," << people[people.size()-1].get_age();
+
         file.close();
     } else
         cout << "The file did not open properly." << endl;
 }
 
-int readFromFile() {
-
+int read_from_file() {
     ifstream file("./base.txt");
-    file.seekg(0, ios::end);
     int *file_size = new int;
+
+    file.seekg(0, ios::end);
     *file_size = file.tellg();
     file.seekg(0, ios::beg);
+
     if (file_size > 0) {
         if (file.is_open()) {
-            int *i = new int;
+
+
             while (!file.eof()) {
                 Person *person = new Person();
-                char *dane = new char;
-                file >> dane;
-                char *tmp = strtok(dane, ",");
+                char *data = new char;
+                char * tmp = new char;
+                int *i = new int;
+
+                file >> data;
+                tmp = strtok(data, ",");
                 *i = 1;
                 while (tmp != NULL) {
                     switch ((*i) + 1) {
                         case option::name:
-                            person->setName(tmp);
+                            person->set_name(tmp);
                             break;
                         case option::surname:
-                            person->setSurname(tmp);
+                            person->set_surname(tmp);
                             break;
-                        case option::phoneNumber:
-                            person->setPhoneNumber(tmp);
+                        case option::phone_number:
+                            person->set_phone_number(tmp);
                             break;
                         case option::age:
-                            person->setAge(atoi(tmp)); //konwersja char* do int
+                            person->set_age(atoi(tmp)); //konwersja char* do int
                             break;
                         default:
                             break;
@@ -202,23 +204,26 @@ int readFromFile() {
 
                 people.push_back(*person);
 
-                delete dane;
-                delete tmp;
                 delete person;
-
+                delete data;
+                delete tmp;
+                delete i;
             }
-            delete i;
+
             file.close();
         } else
             cout << CYAN << "The file did not open properly." << endl;
     } else
         cout << BLUE << "THE BASE IS EMPTY!" << endl;
+
     delete file_size;
-    showPersons();
-    requireEnter();
+    show_persons();
+    require_enter();
 }
 
-int searchingMenu() {
+int searching_menu() {
+    char  * option = new char;
+
     cout << "Search with:" << endl;
     cout << "1. ID" << endl;
     cout << "2. Name" << endl;
@@ -226,27 +231,29 @@ int searchingMenu() {
     cout << "4. Phone Number" << endl;
     cout << "5. Age" << endl;
 
-    char c = getch();
-    return static_cast<int>(c) - 48;
+    *option = getch();
+    return static_cast<int>(*option) - 48;
 }
 
-void searchingBase() {
+void searching_base() {
     if (people.size()) {
-        switch (searchingMenu()) {
+        switch (searching_menu()) {
             case option::ID: {
-                cout << "Enter the ID you want to search by:";
                 int *id = new int;
+
+                cout << "Enter the ID you want to search by:";
                 cin >> *id;
                 cin.ignore();
-                if (*id > Person::getCounter())
+                if (*id > Person::get_counter())
                     cout << "There is no such ID!" << endl;
                 else search<int, option::ID>(*id);
                 delete id;
                 break;
             }
             case option::name: {
-                cout << "Enter the NAME you want to search by:";
                 string name;
+
+                cout << "Enter the NAME you want to search by:";
                 cin >> name;
                 cin.ignore();
                 transform(name.begin(), name.end(), name.begin(), ::tolower);
@@ -254,29 +261,33 @@ void searchingBase() {
                 break;
             }
             case option::surname: {
-                cout << "Enter the SURNAME you want to search by:";
                 string surname;
+
+                cout << "Enter the SURNAME you want to search by:";
                 cin >> surname;
                 cin.ignore();
                 transform(surname.begin(), surname.end(), surname.begin(), ::tolower);
                 search<string, option::surname>(surname);
                 break;
             }
-            case option::phoneNumber: {
+            case option::phone_number: {
+                char *phone_number = new char;
+
                 cout << "Enter the PHONE NUMBER you want to search by:";
-                char *phoneNumber = new char;
-                cin >> phoneNumber;
+                cin >> phone_number;
                 cin.ignore();
-                search<string, option::phoneNumber>(phoneNumber);
-                delete phoneNumber;
+                search<string, option::phone_number>(phone_number);
+                delete phone_number;
                 break;
             }
             case option::age: {
+                short int *age = new short int;
+
                 cout << "Enter the AGE you want to search by:";
-                short int age;
-                cin >> age;
+                cin >> *age;
                 cin.ignore();
-                search<short int, option::age>(age);
+                search<short int, option::age>(*age);
+                delete age;
                 break;
             }
             default:
@@ -296,32 +307,32 @@ template<typename T2, option p> //ToDo auto
 void search(T2 arg) {
 
     cout << " ID | NAME | SURNAME | PHONE | AGE" << endl;
-
     for (int i = 0; i < people.size(); i++) {
         if (compare<p, T2>(people[i], arg)) {
-            cout << people[i].getID() << " | " << people[i].getName() << " | " << people[i].getSurname()
-                 << " | " << people[i].getPhoneNumber() << " | " << people[i].getAge() << endl;
+            cout << people[i].get_ID() << " | " << people[i].get_name() << " | " << people[i].get_surname()
+                 << " | " << people[i].get_phone_number() << " | " << people[i].get_age() << endl;
         }
     }
 }
 
-void removePerson() //ToDo trzeba jeszcze nadac na nowo id
-{
+void remove_person() { //ToDo trzeba jeszcze nadac na nowo id
+
     if(people.size() > 0) {
-        cout << "Enter the ID of the person you want to remove:" << endl;
         int * id = new int;
+
+        cout << "Enter the ID of the person you want to remove:" << endl;
         cin >> *id;
         cin.ignore();
         Person person;
-        for ( int i=(*id)-1; i<people.size()-1; i++) {
+
+        for ( int i = (*id) - 1; i < people.size() - 1; i++)
             people[i] = people[i+1];
-        }
-        people.pop_back();
+
         delete id;
+        people.pop_back();
         system("clear");
         cout << "New table:" << endl;
-        showPersons();
-
+        show_persons();
     }
     else cout << "The Base is empty. You cannot remove." << endl;
 }
