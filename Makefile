@@ -123,6 +123,87 @@ smallDatabase/fast:
 	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/build
 .PHONY : smallDatabase/fast
 
+Add.o: Add.cpp.o
+
+.PHONY : Add.o
+
+# target to build an object file
+Add.cpp.o:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Add.cpp.o
+.PHONY : Add.cpp.o
+
+Add.i: Add.cpp.i
+
+.PHONY : Add.i
+
+# target to preprocess a source file
+Add.cpp.i:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Add.cpp.i
+.PHONY : Add.cpp.i
+
+Add.s: Add.cpp.s
+
+.PHONY : Add.s
+
+# target to generate assembly for a file
+Add.cpp.s:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Add.cpp.s
+.PHONY : Add.cpp.s
+
+FileOperations.o: FileOperations.cpp.o
+
+.PHONY : FileOperations.o
+
+# target to build an object file
+FileOperations.cpp.o:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/FileOperations.cpp.o
+.PHONY : FileOperations.cpp.o
+
+FileOperations.i: FileOperations.cpp.i
+
+.PHONY : FileOperations.i
+
+# target to preprocess a source file
+FileOperations.cpp.i:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/FileOperations.cpp.i
+.PHONY : FileOperations.cpp.i
+
+FileOperations.s: FileOperations.cpp.s
+
+.PHONY : FileOperations.s
+
+# target to generate assembly for a file
+FileOperations.cpp.s:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/FileOperations.cpp.s
+.PHONY : FileOperations.cpp.s
+
+Menu.o: Menu.cpp.o
+
+.PHONY : Menu.o
+
+# target to build an object file
+Menu.cpp.o:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Menu.cpp.o
+.PHONY : Menu.cpp.o
+
+Menu.i: Menu.cpp.i
+
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
 Person.o: Person.cpp.o
 
 .PHONY : Person.o
@@ -149,6 +230,87 @@ Person.s: Person.cpp.s
 Person.cpp.s:
 	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Person.cpp.s
 .PHONY : Person.cpp.s
+
+Remove.o: Remove.cpp.o
+
+.PHONY : Remove.o
+
+# target to build an object file
+Remove.cpp.o:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Remove.cpp.o
+.PHONY : Remove.cpp.o
+
+Remove.i: Remove.cpp.i
+
+.PHONY : Remove.i
+
+# target to preprocess a source file
+Remove.cpp.i:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Remove.cpp.i
+.PHONY : Remove.cpp.i
+
+Remove.s: Remove.cpp.s
+
+.PHONY : Remove.s
+
+# target to generate assembly for a file
+Remove.cpp.s:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Remove.cpp.s
+.PHONY : Remove.cpp.s
+
+Search.o: Search.cpp.o
+
+.PHONY : Search.o
+
+# target to build an object file
+Search.cpp.o:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Search.cpp.o
+.PHONY : Search.cpp.o
+
+Search.i: Search.cpp.i
+
+.PHONY : Search.i
+
+# target to preprocess a source file
+Search.cpp.i:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Search.cpp.i
+.PHONY : Search.cpp.i
+
+Search.s: Search.cpp.s
+
+.PHONY : Search.s
+
+# target to generate assembly for a file
+Search.cpp.s:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Search.cpp.s
+.PHONY : Search.cpp.s
+
+Show.o: Show.cpp.o
+
+.PHONY : Show.o
+
+# target to build an object file
+Show.cpp.o:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Show.cpp.o
+.PHONY : Show.cpp.o
+
+Show.i: Show.cpp.i
+
+.PHONY : Show.i
+
+# target to preprocess a source file
+Show.cpp.i:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Show.cpp.i
+.PHONY : Show.cpp.i
+
+Show.s: Show.cpp.s
+
+.PHONY : Show.s
+
+# target to generate assembly for a file
+Show.cpp.s:
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Show.cpp.s
+.PHONY : Show.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +348,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... smallDatabase"
 	@echo "... edit_cache"
+	@echo "... Add.o"
+	@echo "... Add.i"
+	@echo "... Add.s"
+	@echo "... FileOperations.o"
+	@echo "... FileOperations.i"
+	@echo "... FileOperations.s"
+	@echo "... Menu.o"
+	@echo "... Menu.i"
+	@echo "... Menu.s"
 	@echo "... Person.o"
 	@echo "... Person.i"
 	@echo "... Person.s"
+	@echo "... Remove.o"
+	@echo "... Remove.i"
+	@echo "... Remove.s"
+	@echo "... Search.o"
+	@echo "... Search.i"
+	@echo "... Search.s"
+	@echo "... Show.o"
+	@echo "... Show.i"
+	@echo "... Show.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

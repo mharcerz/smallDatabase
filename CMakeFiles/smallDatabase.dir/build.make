@@ -105,19 +105,175 @@ CMakeFiles/smallDatabase.dir/Person.cpp.o.provides: CMakeFiles/smallDatabase.dir
 CMakeFiles/smallDatabase.dir/Person.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Person.cpp.o
 
 
+CMakeFiles/smallDatabase.dir/Add.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
+CMakeFiles/smallDatabase.dir/Add.cpp.o: Add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/smallDatabase.dir/Add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/Add.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/Add.cpp
+
+CMakeFiles/smallDatabase.dir/Add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/Add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/Add.cpp > CMakeFiles/smallDatabase.dir/Add.cpp.i
+
+CMakeFiles/smallDatabase.dir/Add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/Add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/Add.cpp -o CMakeFiles/smallDatabase.dir/Add.cpp.s
+
+CMakeFiles/smallDatabase.dir/Add.cpp.o.requires:
+
+.PHONY : CMakeFiles/smallDatabase.dir/Add.cpp.o.requires
+
+CMakeFiles/smallDatabase.dir/Add.cpp.o.provides: CMakeFiles/smallDatabase.dir/Add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Add.cpp.o.provides.build
+.PHONY : CMakeFiles/smallDatabase.dir/Add.cpp.o.provides
+
+CMakeFiles/smallDatabase.dir/Add.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Add.cpp.o
+
+
+CMakeFiles/smallDatabase.dir/Show.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
+CMakeFiles/smallDatabase.dir/Show.cpp.o: Show.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/smallDatabase.dir/Show.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/Show.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/Show.cpp
+
+CMakeFiles/smallDatabase.dir/Show.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/Show.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/Show.cpp > CMakeFiles/smallDatabase.dir/Show.cpp.i
+
+CMakeFiles/smallDatabase.dir/Show.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/Show.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/Show.cpp -o CMakeFiles/smallDatabase.dir/Show.cpp.s
+
+CMakeFiles/smallDatabase.dir/Show.cpp.o.requires:
+
+.PHONY : CMakeFiles/smallDatabase.dir/Show.cpp.o.requires
+
+CMakeFiles/smallDatabase.dir/Show.cpp.o.provides: CMakeFiles/smallDatabase.dir/Show.cpp.o.requires
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Show.cpp.o.provides.build
+.PHONY : CMakeFiles/smallDatabase.dir/Show.cpp.o.provides
+
+CMakeFiles/smallDatabase.dir/Show.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Show.cpp.o
+
+
+CMakeFiles/smallDatabase.dir/Search.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
+CMakeFiles/smallDatabase.dir/Search.cpp.o: Search.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/smallDatabase.dir/Search.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/Search.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/Search.cpp
+
+CMakeFiles/smallDatabase.dir/Search.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/Search.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/Search.cpp > CMakeFiles/smallDatabase.dir/Search.cpp.i
+
+CMakeFiles/smallDatabase.dir/Search.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/Search.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/Search.cpp -o CMakeFiles/smallDatabase.dir/Search.cpp.s
+
+CMakeFiles/smallDatabase.dir/Search.cpp.o.requires:
+
+.PHONY : CMakeFiles/smallDatabase.dir/Search.cpp.o.requires
+
+CMakeFiles/smallDatabase.dir/Search.cpp.o.provides: CMakeFiles/smallDatabase.dir/Search.cpp.o.requires
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Search.cpp.o.provides.build
+.PHONY : CMakeFiles/smallDatabase.dir/Search.cpp.o.provides
+
+CMakeFiles/smallDatabase.dir/Search.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Search.cpp.o
+
+
+CMakeFiles/smallDatabase.dir/Menu.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
+CMakeFiles/smallDatabase.dir/Menu.cpp.o: Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/smallDatabase.dir/Menu.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/Menu.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/Menu.cpp
+
+CMakeFiles/smallDatabase.dir/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/Menu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/Menu.cpp > CMakeFiles/smallDatabase.dir/Menu.cpp.i
+
+CMakeFiles/smallDatabase.dir/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/Menu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/Menu.cpp -o CMakeFiles/smallDatabase.dir/Menu.cpp.s
+
+CMakeFiles/smallDatabase.dir/Menu.cpp.o.requires:
+
+.PHONY : CMakeFiles/smallDatabase.dir/Menu.cpp.o.requires
+
+CMakeFiles/smallDatabase.dir/Menu.cpp.o.provides: CMakeFiles/smallDatabase.dir/Menu.cpp.o.requires
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Menu.cpp.o.provides.build
+.PHONY : CMakeFiles/smallDatabase.dir/Menu.cpp.o.provides
+
+CMakeFiles/smallDatabase.dir/Menu.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Menu.cpp.o
+
+
+CMakeFiles/smallDatabase.dir/Remove.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
+CMakeFiles/smallDatabase.dir/Remove.cpp.o: Remove.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/smallDatabase.dir/Remove.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/Remove.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/Remove.cpp
+
+CMakeFiles/smallDatabase.dir/Remove.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/Remove.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/Remove.cpp > CMakeFiles/smallDatabase.dir/Remove.cpp.i
+
+CMakeFiles/smallDatabase.dir/Remove.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/Remove.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/Remove.cpp -o CMakeFiles/smallDatabase.dir/Remove.cpp.s
+
+CMakeFiles/smallDatabase.dir/Remove.cpp.o.requires:
+
+.PHONY : CMakeFiles/smallDatabase.dir/Remove.cpp.o.requires
+
+CMakeFiles/smallDatabase.dir/Remove.cpp.o.provides: CMakeFiles/smallDatabase.dir/Remove.cpp.o.requires
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/Remove.cpp.o.provides.build
+.PHONY : CMakeFiles/smallDatabase.dir/Remove.cpp.o.provides
+
+CMakeFiles/smallDatabase.dir/Remove.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/Remove.cpp.o
+
+
+CMakeFiles/smallDatabase.dir/FileOperations.cpp.o: CMakeFiles/smallDatabase.dir/flags.make
+CMakeFiles/smallDatabase.dir/FileOperations.cpp.o: FileOperations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/smallDatabase.dir/FileOperations.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smallDatabase.dir/FileOperations.cpp.o -c /mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.cpp
+
+CMakeFiles/smallDatabase.dir/FileOperations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smallDatabase.dir/FileOperations.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.cpp > CMakeFiles/smallDatabase.dir/FileOperations.cpp.i
+
+CMakeFiles/smallDatabase.dir/FileOperations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smallDatabase.dir/FileOperations.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.cpp -o CMakeFiles/smallDatabase.dir/FileOperations.cpp.s
+
+CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.requires:
+
+.PHONY : CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.requires
+
+CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.provides: CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.requires
+	$(MAKE) -f CMakeFiles/smallDatabase.dir/build.make CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.provides.build
+.PHONY : CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.provides
+
+CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.provides.build: CMakeFiles/smallDatabase.dir/FileOperations.cpp.o
+
+
 # Object files for target smallDatabase
 smallDatabase_OBJECTS = \
 "CMakeFiles/smallDatabase.dir/main.cpp.o" \
-"CMakeFiles/smallDatabase.dir/Person.cpp.o"
+"CMakeFiles/smallDatabase.dir/Person.cpp.o" \
+"CMakeFiles/smallDatabase.dir/Add.cpp.o" \
+"CMakeFiles/smallDatabase.dir/Show.cpp.o" \
+"CMakeFiles/smallDatabase.dir/Search.cpp.o" \
+"CMakeFiles/smallDatabase.dir/Menu.cpp.o" \
+"CMakeFiles/smallDatabase.dir/Remove.cpp.o" \
+"CMakeFiles/smallDatabase.dir/FileOperations.cpp.o"
 
 # External object files for target smallDatabase
 smallDatabase_EXTERNAL_OBJECTS =
 
 smallDatabase: CMakeFiles/smallDatabase.dir/main.cpp.o
 smallDatabase: CMakeFiles/smallDatabase.dir/Person.cpp.o
+smallDatabase: CMakeFiles/smallDatabase.dir/Add.cpp.o
+smallDatabase: CMakeFiles/smallDatabase.dir/Show.cpp.o
+smallDatabase: CMakeFiles/smallDatabase.dir/Search.cpp.o
+smallDatabase: CMakeFiles/smallDatabase.dir/Menu.cpp.o
+smallDatabase: CMakeFiles/smallDatabase.dir/Remove.cpp.o
+smallDatabase: CMakeFiles/smallDatabase.dir/FileOperations.cpp.o
 smallDatabase: CMakeFiles/smallDatabase.dir/build.make
 smallDatabase: CMakeFiles/smallDatabase.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable smallDatabase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/mharc/Desktop/smallDatabase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable smallDatabase"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/smallDatabase.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +283,12 @@ CMakeFiles/smallDatabase.dir/build: smallDatabase
 
 CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/main.cpp.o.requires
 CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Person.cpp.o.requires
+CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Add.cpp.o.requires
+CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Show.cpp.o.requires
+CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Search.cpp.o.requires
+CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Menu.cpp.o.requires
+CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/Remove.cpp.o.requires
+CMakeFiles/smallDatabase.dir/requires: CMakeFiles/smallDatabase.dir/FileOperations.cpp.o.requires
 
 .PHONY : CMakeFiles/smallDatabase.dir/requires
 

@@ -4,9 +4,11 @@
 
 #ifndef SMALLDATABASE_PERSON_H
 #define SMALLDATABASE_PERSON_H
+#include <string>
+
 enum option {ID = 1, name, surname, phone_number, age};
 using namespace std;
-#include <string>
+
 class Person {
 private:
     int ID;
@@ -34,8 +36,7 @@ public:
     template <option p, typename T>
     T get();
 
-
 };
 
-#endif SMALLDATABASE_PERSON_H
+#endif //SMALLDATABASE_PERSON_H
 
