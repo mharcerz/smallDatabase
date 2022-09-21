@@ -4,10 +4,13 @@
 
 #ifndef SMALLDATABASE_SEARCH_H
 #define SMALLDATABASE_SEARCH_H
+
 #include <algorithm>
 #include <iostream>
-#include <conio.h>
 #include <vector>
+#include <unistd.h>
+#include <termios.h>
+
 #include "Person.h"
 
 using namespace std;
@@ -21,5 +24,7 @@ template<typename T2, option>
 void search(T2, vector<Person> &);
 
 int searching_menu();
+
+char getch();
 
 #endif //SMALLDATABASE_SEARCH_H

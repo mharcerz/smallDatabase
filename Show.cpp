@@ -6,6 +6,7 @@
 
 void show_persons(vector <Person> &people) {
 
+
     if (people.size()) {
         cout << PURPLE << " ID | NAME | SURNAME | PHONE | AGE" << endl << YELLOW;
 
@@ -17,4 +18,5 @@ void show_persons(vector <Person> &people) {
         }
     } else
         cout << "THE BASE IS EMPTY!!!" << endl;
+
 }

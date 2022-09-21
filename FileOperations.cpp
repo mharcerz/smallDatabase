@@ -1,7 +1,7 @@
 //
 // Created by mharc on 16.09.2022.
 //
-
+#include <sstream>
 #include "FileOperations.h"
 void save_to_file(vector<Person> &people) {
     ofstream file("./base.txt");
@@ -34,17 +34,51 @@ void read_from_file(vector<Person> &people) {
         if (file.is_open()) {
 
 
+//            while (!file.eof()) {
+//                Person person;
+//                char * data = new char; // pointer is essential (both)
+//                char * tmp = new char;
+//                int i;
+//
+//                file >> data;
+//                tmp = strtok(data, ",");
+//                i = 1;
+//                while (tmp != NULL) {
+//                    switch (i + 1) {
+//                        case option::name:
+//                            person.set_name(tmp);
+//                            break;
+//                        case option::surname:
+//                            person.set_surname(tmp);
+//                            break;
+//                        case option::phone_number:
+//                            person.set_phone_number(tmp);
+//                            break;
+//                        case option::age:
+//                            person.set_age(atoi(tmp)); //cast char* to int
+//                            break;
+//                        default:
+//                            break;
+//                    }
+//                    tmp = strtok(NULL, ","); //split
+//                    i++;
+//                }
+//
+//                people.push_back(person);
+//
+//                delete data;
+//                delete tmp;
+//            }
+
             while (!file.eof()) {
                 Person person;
-                char * data = new char; // pointer is essential (both)
-                char * tmp = new char;
-                int i;
+                string data, tmp;
+                getline(file, data);
+                stringstream X(data);
+                for(int i = 2; i <= 5; i++) {
 
-                file >> data;
-                tmp = strtok(data, ",");
-                i = 1;
-                while (tmp != NULL) {
-                    switch (i + 1) {
+                    getline(X,tmp, ',');
+                    switch (i) {
                         case option::name:
                             person.set_name(tmp);
                             break;
@@ -55,21 +89,16 @@ void read_from_file(vector<Person> &people) {
                             person.set_phone_number(tmp);
                             break;
                         case option::age:
-                            person.set_age(atoi(tmp)); //cast char* to int
+                            person.set_age(stoi(tmp)); //konwersja string do int
                             break;
                         default:
                             break;
                     }
-                    tmp = strtok(NULL, ","); //split
-                    i++;
                 }
 
                 people.push_back(person);
 
-                delete data;
-                delete tmp;
             }
-
             file.close();
         } else
             cout << CYAN << "The file did not open properly." << endl;
