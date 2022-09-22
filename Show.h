@@ -4,10 +4,11 @@
 
 #ifndef SMALLDATABASE_SHOW_H
 #define SMALLDATABASE_SHOW_H
+
 #include <iostream>
 #include <vector>
-#include "Person.h"
 
+#include "Person.h"
 
 #define BLACK "\033[0;30m"
 #define RED  "\033[0;31m"

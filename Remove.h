@@ -5,9 +5,9 @@
 #ifndef SMALLDATABASE_REMOVE_H
 #define SMALLDATABASE_REMOVE_H
 
-
 #include "Show.h"
 #include "Person.h"
+
 using namespace std;
 
 void remove_person(vector<Person> &);

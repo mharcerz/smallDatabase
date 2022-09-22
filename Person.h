@@ -4,6 +4,7 @@
 
 #ifndef SMALLDATABASE_PERSON_H
 #define SMALLDATABASE_PERSON_H
+
 #include <string>
 
 enum option {ID = 1, name, surname, phone_number, age};

@@ -3,6 +3,7 @@
 //
 
 #include "Remove.h"
+
 void remove_person(vector<Person> &people) {
 
     if(people.size() > 0) {

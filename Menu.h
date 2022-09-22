@@ -5,17 +5,11 @@
 #ifndef SMALLDATABASE_MENU_H
 #define SMALLDATABASE_MENU_H
 
-//#include <conio.h>
-
 #include "Add.h"
 #include "Search.h"
 #include "Remove.h"
 #include "Show.h"
 #include "Person.h"
-
-
-
-
 
 using namespace std;
 

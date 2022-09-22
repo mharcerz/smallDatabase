@@ -3,7 +3,7 @@ project(smallDatabase)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(smallDatabase main.cpp
+add_executable(main.cpp
         Person.h Person.cpp
         Add.h Add.cpp
         Show.h Show.cpp

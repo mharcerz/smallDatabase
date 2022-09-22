@@ -1,10 +1,13 @@
 //
 // Created by mharc on 03.08.2022.
 //
-#include <algorithm>
+
 #include "Person.h"
-using namespace std;
+
+#include <algorithm>
 #include <iostream>
+
+using namespace std;
 
 Person::Person() {
     counter++;

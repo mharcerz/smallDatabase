@@ -3,6 +3,7 @@
 //
 
 #include "Menu.h"
+
 void require_enter() {
 
     cout << RED;
