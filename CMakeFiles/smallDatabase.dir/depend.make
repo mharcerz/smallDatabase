@@ -30,6 +30,7 @@ CMakeFiles/smallDatabase.dir/Remove.cpp.o: Remove.cpp
 CMakeFiles/smallDatabase.dir/Remove.cpp.o: Remove.h
 CMakeFiles/smallDatabase.dir/Remove.cpp.o: Show.h
 
+CMakeFiles/smallDatabase.dir/Search.cpp.o: Getchar.h
 CMakeFiles/smallDatabase.dir/Search.cpp.o: Person.h
 CMakeFiles/smallDatabase.dir/Search.cpp.o: Search.cpp
 CMakeFiles/smallDatabase.dir/Search.cpp.o: Search.h

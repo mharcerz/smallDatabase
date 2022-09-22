@@ -36,6 +36,8 @@ Show.h
 Menu.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/Menu.h
 
+/mnt/c/Users/mharc/Desktop/smallDatabase/Getchar.h
+
 /mnt/c/Users/mharc/Desktop/smallDatabase/Menu.cpp
 Menu.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/Menu.h
@@ -77,6 +79,8 @@ Person.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/Search.cpp
 Search.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/Search.h
+Getchar.h
+/mnt/c/Users/mharc/Desktop/smallDatabase/Getchar.h
 
 /mnt/c/Users/mharc/Desktop/smallDatabase/Search.h
 algorithm
@@ -107,6 +111,4 @@ Person.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/main.cpp
 FileOperations.h
 /mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.h
-conio.h
--
 
