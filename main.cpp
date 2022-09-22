@@ -11,6 +11,7 @@
 using namespace std;
 vector <Person> people;
 
+
 int main() {
 
     ios_base::sync_with_stdio(0);

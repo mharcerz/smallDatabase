@@ -1,4 +1,4 @@
-Cannot generate into C:\Users\mharc\Desktop\smallDatabase
+Cannot generate into C:\Users\mharc\Desktop\small\smallDatabase
 It is already used for project \mnt\c\Users\mharc\Desktop\smallDatabase
 
 Please either delete it manually or select another generation directory

@@ -6,83 +6,83 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Add.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Add.cpp
 Add.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Add.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Add.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Add.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Add.h
 iostream
 -
 vector
 -
 Person.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/FileOperations.cpp
 sstream
 -
 FileOperations.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/FileOperations.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/FileOperations.h
 fstream
 -
 cstring
 -
 Person.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 Show.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Show.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Show.h
 Menu.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Menu.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Menu.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Getchar.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Getchar.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Menu.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Menu.cpp
 Menu.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Menu.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Menu.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Menu.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Menu.h
 Add.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Add.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Add.h
 Search.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Search.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Search.h
 Remove.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Remove.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Remove.h
 Show.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Show.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Show.h
 Person.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.cpp
 Person.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 algorithm
 -
 iostream
 -
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 string
 -
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Remove.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Remove.cpp
 Remove.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Remove.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Remove.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Remove.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Remove.h
 Show.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Show.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Show.h
 Person.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Search.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Search.cpp
 Search.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Search.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Search.h
 Getchar.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Getchar.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Getchar.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Search.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Search.h
 algorithm
 -
 iostream
@@ -94,21 +94,21 @@ unistd.h
 termios.h
 -
 Person.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Show.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Show.cpp
 Show.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Show.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Show.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/Show.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Show.h
 iostream
 -
 vector
 -
 Person.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/Person.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/Person.h
 
-/mnt/c/Users/mharc/Desktop/smallDatabase/main.cpp
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/main.cpp
 FileOperations.h
-/mnt/c/Users/mharc/Desktop/smallDatabase/FileOperations.h
+/mnt/c/Users/mharc/Desktop/small/smallDatabase/FileOperations.h
 
