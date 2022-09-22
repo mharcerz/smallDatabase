@@ -1,6 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
 project(smallDatabase)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(smallDatabase main.cpp Osoba.h Osoba.cpp)
+add_executable(smallDatabase main.cpp
+        Person.h Person.cpp
+        Add.h Add.cpp
+        Show.h Show.cpp
+        Search.h Search.cpp
+        Menu.h Menu.cpp
+        Remove.h Remove.cpp
+        FileOperations.h FileOperations.cpp)

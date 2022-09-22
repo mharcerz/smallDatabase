@@ -1,0 +1,13 @@
+# ninja log v5
+1	266	6827840342200941	CMakeFiles/smallDatabase.dir/main.cpp.obj	788991f0121a8e95
+268	376	6827840343251547	smallDatabase.exe	a799c8877c57e05c
+2	250	6827840584958417	CMakeFiles/smallDatabase.dir/main.cpp.obj	788991f0121a8e95
+250	332	6827840585738332	smallDatabase.exe	a799c8877c57e05c
+2	276	6827840728208532	CMakeFiles/smallDatabase.dir/main.cpp.obj	788991f0121a8e95
+276	364	6827840729048092	smallDatabase.exe	a799c8877c57e05c
+4	266	6827841636477095	CMakeFiles/smallDatabase.dir/main.cpp.obj	788991f0121a8e95
+267	351	6827841637283839	smallDatabase.exe	a799c8877c57e05c
+2	499	6827846231614960	CMakeFiles/smallDatabase.dir/main.cpp.obj	788991f0121a8e95
+500	676	6827846233379299	smallDatabase.exe	a799c8877c57e05c
+2	232	6827846522961963	CMakeFiles/smallDatabase.dir/main.cpp.obj	788991f0121a8e95
+232	319	6827846523806509	smallDatabase.exe	a799c8877c57e05c
