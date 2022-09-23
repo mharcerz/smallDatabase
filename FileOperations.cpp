@@ -6,7 +6,7 @@
 void save_to_file(vector<Person> &people) {
     ofstream file("./base.txt");
 
-    if (file.is_open()) {
+    if (file.is_open() && people.size() > 0) {
         for (int i = 0; i < people.size() - 1; i++) {
             file << people[i].get_name() << "," << people[i].get_surname()
                  << "," << people[i].get_phone_number()
@@ -33,43 +33,6 @@ void read_from_file(vector<Person> &people) {
     if (file_size > 0) {
         if (file.is_open()) {
 
-
-//            while (!file.eof()) {
-//                Person person;
-//                char * data = new char; // pointer is essential (both)
-//                char * tmp = new char;
-//                int i;
-//
-//                file >> data;
-//                tmp = strtok(data, ",");
-//                i = 1;
-//                while (tmp != NULL) {
-//                    switch (i + 1) {
-//                        case option::name:
-//                            person.set_name(tmp);
-//                            break;
-//                        case option::surname:
-//                            person.set_surname(tmp);
-//                            break;
-//                        case option::phone_number:
-//                            person.set_phone_number(tmp);
-//                            break;
-//                        case option::age:
-//                            person.set_age(atoi(tmp)); //cast char* to int
-//                            break;
-//                        default:
-//                            break;
-//                    }
-//                    tmp = strtok(NULL, ","); //split
-//                    i++;
-//                }
-//
-//                people.push_back(person);
-//
-//                delete data;
-//                delete tmp;
-//            }
-
             while (!file.eof()) {
                 Person person;
                 string data, tmp;
@@ -89,7 +52,7 @@ void read_from_file(vector<Person> &people) {
                             person.set_phone_number(tmp);
                             break;
                         case option::age:
-                            person.set_age(stoi(tmp)); //konwersja string do int
+                            person.set_age(stoi(tmp)); //cast  string to int
                             break;
                         default:
                             break;
@@ -105,6 +68,7 @@ void read_from_file(vector<Person> &people) {
     } else
         cout << BLUE << "THE BASE IS EMPTY!" << endl;
 
-    show_persons(people);
+    if(people.size() > 0)
+        show_persons(people);
     require_enter();
 }

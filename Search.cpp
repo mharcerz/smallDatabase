@@ -10,7 +10,7 @@ bool compare(Person person, T2 arg) {
     return person.get<p, T2>() == arg; //calling overloaded get() functions
 }
 
-template<typename T2, option p> //ToDo auto
+template<typename T2, option p>
 void search(T2 arg, vector<Person> &people) {
     cout << " ID | NAME | SURNAME | PHONE | AGE" << endl;
     for (int i = 0; i < people.size(); i++) {
@@ -33,7 +33,6 @@ int searching_menu() {
     cout << "5. Age" << endl;
 
     option = getch();
-//    option = '1'; //ToDo remove!!!
     return static_cast<int>(option) - 48;
 }
 

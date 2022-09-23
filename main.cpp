@@ -1,4 +1,4 @@
-#include "FileOperations.h" //ToDo dowiedz sie czym jest auto!!!
+#include "FileOperations.h"
 
 #define BLACK "\033[0;30m"
 #define RED  "\033[0;31m"

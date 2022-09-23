@@ -6,6 +6,9 @@
 
 void remove_person(vector<Person> &people) {
 
+    show_persons(people);
+    cout << WHITE;
+
     if(people.size() > 0) {
         int i;
 
@@ -16,7 +19,7 @@ void remove_person(vector<Person> &people) {
             cout << "There is no such ID!" << endl;
         else {
             for (i--; i < people.size() - 1; i++) {
-                people[i] = people[i + 1]; // overload = in Person class
+                people[i] = people[i + 1]; // overload = in Person's class
             }
             people.pop_back();
             system("clear");
