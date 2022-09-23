@@ -38,6 +38,7 @@ git clone https://github.com/mharcerz/smallDatabase.git
 
 After that, you can execute project using cmake:
 ```sh
+cd smallDatabase
 cmake . && make
 ./smallDatabase
 ```
